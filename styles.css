@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    border-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+aside {
+    flex: 2;
+    background: #18C29C;
+    color: #084236;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+}
+
+aside header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 0 1rem;
+    flex: 1 1 auto;
+}
+
+aside header .logo {
+   margin-left: 1.2rem;
+}
+
+aside header div:nth-child(2) {
+    cursor: pointer;
+}
+
+aside section {
+    flex: 8 1 auto;
+}
+
+aside section nav ul li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0.2rem 1rem;
+}
+
+aside section nav ul li:hover{
+    background: #8ED7C6;
+    border-radius: 12px;
+}
+
+aside section nav ul li div {
+    padding: 0.5rem 0.4rem;
+    cursor: pointer;
+}
+
+aside section nav ul li .icon {
+    padding-left: 0.8rem;
+}
+
+.icon {
+    height: 24px;
+    width: 24px;
+}
+
+.icon img {
+    height: 100%;
+    width: 100%;
+}
+
+.logo {
+    height: 64px;
+    width: 64px;
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+}
+
+aside footer {
+    flex: 1 1 auto;
+    max-height: 64px;
+    display: flex;
+    background: #8ED7C6;
+    align-items: center;
+    gap: 1em;
+    padding: 0 1em;
+}
+
+aside footer .logo {
+    height: 48px;
+    width: 48px;
+    flex: 1 1 auto;
+}
+
+aside footer .logo img {
+    border-radius: 12px;
+}
+
+aside footer .title {
+    flex: 5 1 auto;
+    line-height: 1.2em;
+}
+
+aside footer .title span:nth-child(1) {
+    font-size: 1em;
+}
+
+aside footer .title span {
+    font-size: 0.8em;
+}
+
+aside footer .icon {
+    flex: 1 1 auto;
+}
+
+main {
+    flex: 8;
+    color: #084236;
+    padding: 0.8rem;
+    font-weight: 500;
+}
