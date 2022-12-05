@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    border-sizing: border-box;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -33,6 +33,12 @@ aside header .logo {
 
 aside header div:nth-child(2) {
     cursor: pointer;
+    padding: 0.3em 0.3em 0 0.3em;
+}
+
+aside header div:nth-child(2):hover {
+    background: #8ED7C6;
+    border-radius: 12px;
 }
 
 aside section {
@@ -61,8 +67,8 @@ aside section nav ul li .icon {
 }
 
 .icon {
-    height: 24px;
-    width: 24px;
+    height: 2.4em;
+    width: 2.4em;
 }
 
 .icon img {
@@ -91,8 +97,8 @@ aside footer {
 }
 
 aside footer .logo {
-    height: 48px;
-    width: 48px;
+    height: 3em;
+    width: 3em;
     flex: 1 1 auto;
 }
 
@@ -114,6 +120,8 @@ aside footer .title span {
 }
 
 aside footer .icon {
+    height: 1.5em;
+    width: 1.5em;
     flex: 1 1 auto;
 }
 
@@ -126,4 +134,9 @@ main {
     color: #084236;
     padding: 0.8rem;
     font-weight: 500;
+}
+
+.selected {
+    background: #0842368c;
+    border-radius: 12px;
 }
