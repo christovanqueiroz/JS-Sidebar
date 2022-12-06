@@ -129,6 +129,13 @@ aside footer .icon {
     display: none;
 }
 
+.isMenuOpen {
+    max-width: 3.5em;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+}
+
 main {
     flex: 8;
     color: #084236;
