@@ -32,5 +32,4 @@ const selectNavItem = () => {
     }
 }
 
-navItem.forEach(item => item.addEventListener('click', selectNavItem)
-)
+navItem.forEach(item => item.addEventListener('click', selectNavItem))
