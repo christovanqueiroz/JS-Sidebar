@@ -129,13 +129,11 @@ aside footer .icon {
     display: none;
 }
 
-.isMenuClosed {
+.menuClosed {
     max-width: 3.5em;
     align-items: center;
     width: 100%;
     padding: 0;
- //   transition-property: display;
-//    transition: .5s cubic-bezier(0.820, 0.085, 0.395, 0.895)
 }
 
 main {
