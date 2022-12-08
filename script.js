@@ -4,8 +4,8 @@ const logo = document.querySelectorAll('.logo');
 const icon = document.querySelectorAll('.icon');
 const drawer = document.getElementById('drawer');
 let menuClosed = true;
-const navItem = document.querySelectorAll('aside section nav ul li')
-let navItemSelected = true;
+
+const navItems = document.querySelectorAll('aside section nav ul li')
 
 const handleToggleDrawer = () => {
     if(menuClosed) {
@@ -25,11 +25,29 @@ const handleToggleDrawer = () => {
 
 closeSideBar.addEventListener('click', handleToggleDrawer);
 
-const selectNavItem = () => {
-    if(navItemSelected) {
-        navItem.forEach(item => item.classList.toggle('selected'));
-        navItemSelected = true;
-    }
+
+if(navItems.classList.contains("selected"))
+function navItemSelectedOne() {
+    document.getElementById('navSearch').classList.toggle("selected");
+    document.navItems.siblings
 }
 
-navItem.forEach(item => item.addEventListener('click', selectNavItem))
+function navItemSelectedTwo() {
+    document.getElementById('navDashboard').classList.toggle("selected");
+}
+
+function navItemSelectedThree() {
+    document.getElementById('navPets').classList.toggle("selected");
+}
+
+function navItemSelectedFour() {
+    document.getElementById('navClients').classList.toggle("selected");
+}
+
+function navItemSelectedFive() {
+    document.getElementById('navVets').classList.toggle("selected");
+}
+
+function navItemSelectedSix() {
+    document.getElementById('navSettings').classList.toggle("selected");
+}
